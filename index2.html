@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+       
+        .form{
+            background-color:white;
+            margin: auto;
+            width: 100%;
+            padding: 10px;
+        }
+        .empty{
+            height:100px;
+            width:500px;
+            border:1px solid black;
+           padding:2px;
+        }
+        .mandatory{
+            color:red;
+        }
+        .fa-star{
+            color:beige;
+        }
+        .checked{
+            color:yellow;
+        }
+        [placeholder="First"]{
+            border:1px solid black;
+            border-radius: 7px;
+           height:30px;
+           width:250px;
+        }
+        [placeholder="Last"]{
+            border:1px solid black;
+            border-radius: 7px;
+            height:30px;
+            width:250px;
+        }
+        [placeholder="Mail"]{
+            border:1px solid black;
+            border-radius: 7px;
+            height:30px;
+            width:510px;
+        }
+        button{
+            height:25px;
+            width:70px;
+            box-shadow: 10px 10px grey;
+        }
+        button:hover{
+            background-color:darkslategrey;
+        }
+        tr,td,th{
+          
+          margin: 5px;
+          padding: 5px;
+          color:indigo;
+          text-align: center;
+          column-width:200px;
+          column-gap:5px;
+        }
+        .one,.three{
+          background-color:darkgray;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="form">
+    <form class="details">
+      <label for=""><b>Name</b><span class="mandatory">*</span></label>
+      <br>
+      <input type="text" placeholder="First" required>
+      <input type="text" placeholder="Last" required>
+      <br> 
+      <br>
+      <label><b>Email</b><span class="mandatory">*</span></label>
+      <br>
+      <input type="text" placeholder="Mail" required>
+      <br>
+      <br>
+      <label><b>YourExperience</b><span class="mandatory">*</span></label>
+      <br>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <br>
+      <p style="color:black;"><b>Overall, how would you rate your experience with us?</b></p>
+      <label><b>How satisfied are you with</b><span class="mandatory">*</span></label>
+      <br>
+      <table>
+        <tr>
+            <th></th>
+            <th>Very Unsatisfied</th>
+            <th>Unsatisfied</th>
+            <th>Neutral</th>
+            <th>Satisfied</th>
+            <th>Very Satisfied</th>
+        </tr>
+        <tr class="one">
+            <td><b>Purchase</b></td>
+            <td>
+                <label class=check-label></label>
+                <input type="radio" name="radio">
+            </td>
+            <td>
+                <label class=check-label></label>
+                <input type="radio" name="radio">
+            </td>
+            <td>
+                <label class=check-label></label>
+                <input type="radio" name="radio">
+            </td>
+            <td>
+                <label class=check-label></label>
+                <input type="radio" name="radio">
+            </td>
+            <td>
+                <label class=check-label></label>
+                <input type="radio" name="radio">
+            </td>
+        </tr1>
+        <tr class="two">
+            <td><b>Service</b></td>
+            <td>
+                <label class=check-label></label>
+                <input type="radio" name="radio1">
+            </td>
+            <td>
+                <label class=check-label></label>
+                <input type="radio" name="radio1">
+            </td>
+            <td>
+                <label class=check-label></label>
+                <input type="radio" name="radio1">
+            </td>
+            <td>
+                <label class=check-label></label>
+                <input type="radio" name="radio1">
+            </td>
+            <td>
+                <label class=check-label></label>
+                <input type="radio" name="radio1">
+            </td>
+        </tr>
+        <tr class="three">
+            <td><b>Company Overall</b></td>
+            <td>
+                <label class=check-label></label>
+                <input type="radio" name="radio2">
+            </td>
+            <td>
+                <label class=check-label></label>
+                <input type="radio" name="radio2">
+            </td>
+            <td>
+                <label class=check-label></label>
+                <input type="radio" name="radio2">
+            </td>
+            <td>
+                <label class=check-label></label>
+                <input type="radio" name="radio2">
+            </td>
+            <td>
+                <label class=check-label></label>
+                <input type="radio"name="radio2">
+            </td>
+        </tr>
+</table>
+  <br>
+
+      <label><b>How likely are you to</b><span class="mandatory">*</span></label>
+      <br>
+      <table>
+        <tr>
+            <th></th>
+            <th>Very Unlikely</th>
+            <th>Unlikely</th>
+            <th>Neutral</th>
+            <th>Likely</th>
+            <th>Very Likely</th>
+        </tr>
+        <tr class="one">
+            <td><b>Buy from us again</b></td>
+            <td>
+                <label class=check-label></label>
+                <input type="radio" name="radio3">
+            </td>
+            <td>
+                <label class=check-label></label>
+                <input type="radio" name="radio3">
+            </td>
+            <td>
+                <label class=check-label></label>
+                <input type="radio" name="radio3">
+            </td>
+            <td>
+                <label class=check-label></label>
+                <input type="radio" name="radio3">
+            </td>
+            <td>
+                <label class=check-label></label>
+                <input type="radio" name="radio3">
+            </td>
+        </tr>
+        <tr class="two">
+            <td><b>Recommend our product to others</b></td>
+            <td>
+                <label class=check-label></label>
+                <input type="radio" name="radio4">
+            </td>
+            <td>
+                <label class=check-label></label>
+                <input type="radio" name="radio4">
+            </td>
+            <td>
+                <label class=check-label></label>
+                <input type="radio" name="radio4">
+            </td>
+            <td>
+                <label class=check-label></label>
+                <input type="radio" name="radio4">
+            </td>
+            <td>
+                <label class=check-label></label>
+                <input type="radio" name="radio4">
+            </td>
+        </tr>
+        <tr class="three">
+            <td><b>Recommend our company to others</b></td>
+            <td>
+                <label class=check-label></label>
+                <input type="radio" name="radio5">
+            </td>
+            <td>
+                <label class=check-label></label>
+                <input type="radio" name="radio5">
+            </td>
+            <td>
+                <label class=check-label></label>
+                <input type="radio" name="radio5">
+            </td>
+            <td>
+                <label class=check-label></label>
+                <input type="radio" name="radio5">
+            </td>
+            <td>
+                <label class=check-label></label>
+                <input type="radio" name="radio5">
+            </td>
+        </tr>
+</table>
+<br>
+      <p><b>Additional comments or suggestions</b></p>
+      <div class="empty"></div>
+      <br>
+      <button type="submit"><b>Submit</b></button>
+    </form>
+   </div>   
+</body>
+</html>
